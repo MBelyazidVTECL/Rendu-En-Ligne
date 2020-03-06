@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Les pérovskites</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+	<style>
+
+		.center{
+			display : flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		#header
+		{
+			background-image: url(img/PVbckgnd.png) ;
+			background-position: center center;
+			background-repeat:  no-repeat;
+			background-attachment: fixed;
+			background-size:  cover;
+			background-color: white;
+			width:100vw;
+		}
+
+	</style>
+</head>
+
+
+<body class="has-navbar-fixed-top">
+
+
+
+	<!-- bandeau de navigation -->
+	<nav class="navbar is-light is-fixed-top" role="navigation" aria-label="dropdown navigation">
+		<div class="navbar-brand">
+			<!-- crédit photo pour le PV -->
+
+			<div class="content" style="background-attachment: fixed;">
+				<a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@marianaproenca?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Mariana Proença"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Mariana Proença</span>
+				</a>       
+			</div>
+		</div>
+
+		<div class="navbar-menu center">
+			<a class="navbar-item has-text-weight-semibold" href="Index.html">
+				Accueil
+			</a>
+
+			<a class="navbar-item has-text-weight-semibold" href="Process.html">
+				Le dispositif de veille
+			</a>
+
+			<a class="navbar-item has-text-weight-semibold" href="#">
+				Les pérovskites
+			</a>
+		</div>
+	</nav>
+
+	<!-- Image d'accueil -->
+	<section class="hero has-background-black is-fullheight">
+		<div class="hero-body " id="header">
+
+			<div class="container has-text-left has-text-black">
+				<h1 class="is-size-1 has-text-weight-bold" style="margin: 0.5em 4em 1em 3em">Les pérovskites</h1>
+
+				<h2 class="is-size-3 has-text-weight-semibold" style="margin: 0.5em 4em 1em 3em">Une révolution pour le photovoltaïque et les LED ?</h2>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- Partie 1 -->
+
+	<section data-aos="fade-left">
+		<div class="hero-body has-background-grey-lighter">
+			<h2 class="center subtitle is-1">Qu'est-ce qu'une pérovskite ?</h2>   
+		</div>
+
+		<div class="hero-body has-text-justified is-paddingless" style="margin: 2em 0 2em 0">
+			<div class="container is-size-5 " style="max-width: 1024px; text-indent: 5em;">
+				La première pérovskite a été découverte par Gustav Rose en 1839 sous la forme de CaTiO<sub>3</sub>. Il a dédié cette découverte à un minéralogiste russe, Lev Alexeïevitch Perovski, ce qui lui a donné son nom. L'étude de ce cristal a mené à la création d'une famille de matériaux ayant des structures cristallines semblables. C'est ce que l'on appelle "pérovskites" de nos jours.
+			</div>
+			<div class="container is-size-5 " style="max-width: 1024px; text-indent: 5em;">
+				Caractériser ces nouveaux matériaux est particulièrement important, dans la mesure où depuis quelques années, les recherches liées aux pérovskites ont explosé notamment du fait de leurs propriétés étonnantes. Ainsi, selon certains chercheurs il s'est créé une "mode de la pérovskite" qui tend à mettre en avant des articles dès lors que le terme apparaît. Il y aurait donc un mésusage de la notion de "pérovskite".
+			</div>			
+
+			<div class="container is-size-5 " style="max-width: 1024px; text-indent: 5em;">
+				Il est donc légitime de se demander ce qu'est une pérovskite. Pour répondre à cette question, un certain nombre de publications offre une documentation intéressante. Par exemple, "<i>What Defines a Halide Perovskite?</i>" de l'American Chemical Society (ACS) <a href="#ACSDefinePerovskite">[1]</a> se concentre sur une sous-catégorie qui nous intéresse en l'occurrence : les pérovskites hybrides halogénées.
+			</div>
+
+			<div class="hero-body has-text-justified is-paddingless" style="margin: 2em 0 2em 0">
+				<div class="center">
+					<img src="img/ABX3.jpeg" style="max-width: 40em;">
+				</div>
+			</div>
+
+			<div class="hero-body has-text-justified is-paddingless" style="margin: 2em 0 2em 0">
+
+				<div class="container is-size-5 " style="max-width: 1024px; text-indent: 5em;">
+					La condition d'appartenance à la famille des pérovskites est finalement surprenamment simple : le matériau doit cristalliser sous une stŒchiométrie générale du type ABX<sub>3</sub>. Cette structure peut se décliner sous de nombreuses formes avec leurs propriétés et leurs défauts. Pour des raisons de simplicité, on s'intéresse au type de pérovskites qui vont intervenir dans l'optoélectronique et qui suscite un engouement croissant : les pérovskites hybrides halogénées. Dans cette sous-catégorie, A revoie à un cation organique monovalent, B à un métal de transition divalent et X à un halogène.
+				</div>
+
+				<div class="hero-body has-text-justified is-paddingless" style="margin: 2em 0 2em 0">
+					<div class="center">
+						<img src="img/metal_halide.jpeg" style="max-width: 40em;">
+					</div>
+				</div>
+
+				<div class="container is-size-5 " style="max-width: 1024px; text-indent: 5em;">
+					Parmi les matériaux les plus utilisés on compte le MAPbI<sub>3</sub> aussi appelé MAPI très utilisé dans la mise au point de cellules solaires ou de LED à base de méthylammonium (MA), de plomb (P) et d'iode (I).
+				</div>
+
+			</div>
+		</div>
+
+
+	</section>  
+
+	<!-- Partie 2 -->
+
+	<section data-aos="fade-right">
+		<div class="hero-body has-background-grey-lighter">
+			<h2 class="center subtitle is-1">Les défis actuels de l'opto-électronique ?</h2>   
+		</div>
+
+		<div class="hero-body has-text-justified is-paddingless" style="margin: 2em 0 2em 0">
+			<div class="container is-size-5 " style="max-width: 1024px; text-indent: 5em;">
+				La production d'énergie est un des secteurs ayant le plus d'impact sur l'environnement avec la consommation de combustibles fossiles ou nucléaires. Un défi majeur de notre société actuelle est de fournir des sources d'énergie renouvelable à faible impact sur l'environnement (matières première, processus de fabrication, maintenance et recyclage) avec des rendements et des capacités de production adaptés au besoins toujours plus importants.
+			</div>
+
+			<div class="container is-size-5 " style="max-width: 1024px; text-indent: 5em;">
+				Dans cet optique d'une production énergétique toujours plus propre, les panneaux solaires à base de semisconducteurs classiques peuvent constituer un obstacle car les méthodes d'extraction et de traitement des matières premières sont peu respecteuses des écosystèmes et les possibilités de recyclage des modules sont très limitées. Par ailleurs, leur coût prohibitif et leurs faibles rendements (pour les modules les plus démocratisés) empêche le déploiement massif.
+			</div>
+
+			<div class="hero-body has-text-justified is-paddingless" style="margin: 2em 0 2em 0">
+				<div class="center">
+					<img src="img/NREL.png" style="max-width: 60em;">				
+				</div>
+			</div>
+
+			<div class="container is-size-5 " style="max-width: 1024px; text-indent: 5em;">
+				Le rendement des cellules solaire est intrinsèquement limité par la thermodynamique. C'est-à-dire qu'une cellule solaire simple idéale n'aurait de toute façon pas 100% de rendement. Cela est en partie lié à la capacité d'absorption du semiconducteur utilisé. Chaque semiconducteur aura un spectre d'absorption propre et donc pour palier à ce problème, on superpose des cellules dont les spectres d'absorption sont complémentaires. Grâce à cela, on obtient des modules solaires dont l'efficacité n'a d'égal que le coût de production et ce procédé n'est pas parfait : la compatibilité des matériaux dépend de leur paramètre de maille <a href="#parametreMaille">[2]</a> et diminue les ensembles possibles.
+			</div>		
+
+			<div class="hero-body has-text-justified is-paddingless" style="margin: 2em 0 2em 0">
+				<div class="center">
+					<img src="img/bandGap.png" style="max-width: 40em;">				
+				</div>
+			</div>
+
+
+
+		</div>
+
+		
+
+		<div class="hero-body has-text-justified is-paddingless" style="margin: 2em 0 2em 0">
+			<div class="container is-size-5 " style="max-width: 1024px; text-indent: 5em;">
+				Un autre moyen d'améliorer notre efficacité énergétique est de réduire notre besoin en énergie. Alors que la consommation mondiale ne fait qu'augmenter, il est primordial de proposer des appareils toujours moins énergivores afin de contrebalancer.
+			</div>		
+
+			<div class="center">
+				<img src="img/consommationMondiale.png" style="max-width: 60em;">				
+			</div>
+
+			<div class="container is-size-5 " style="max-width: 1024px; text-indent: 5em;">
+				Selon une étude menée par l'ADEME, l'éclairage représente 12% de la consommation nationale d'électricité en 2018. Une étude semblable montre que cela représente environ 15% de la consommation mondiale <a href="#lesechos">[3]</a>. Cela place l'éclairage (public et domestique) parmi les secteurs les plus énergivores. Des progrès étonnants ont été réalisés depuis la démocratisation des ampoules à LED, bien plus efficaces que les ampoules à incandescence ou à halogène.
+			</div>
+
+			<div class="container is-size-5 " style="max-width: 1024px; text-indent: 5em;">
+				<div>
+					Malgré tout, les ampoules LED requièrent des procédés de fabrication coûteux et des matières premières rares et limitées tant dans leur quantité que dans leur accessibilité. C'est la raison pour laquelle la recherche concernant des technologies plus faciles à mettre en œuvre, à produire et encore plus efficients est aussi active. 
+				</div>
+				<div>
+					Par ailleurs, pour le moment les "LED" blanches et plus généralement les LED à couleur variable sont fabriquées à partir de trois LED (rouge, verte et bleu) juxtaposées et encapsulées ensembles. L'intensité alimentant chaque LED permet de moduler la couleur de celle-ci. La miniaturisation du dispositif est limitée par la séparation spatiale des trois LED. Si l'on pouvait empiler les jonctions les unes sur les autres et réussir à émettre depuis les couches inférieures en transmission à travers les couches supérieures, cela permettrait de gagner en résolution sur toute une gamme de dispositifs d'affichage.
+				</div>
+			</div>			
+
+		</div>
+	</section>
+
+	<!-- Partie 3 -->
+
+	<section data-aos="fade-left">
+		<div class="hero-body has-background-grey-lighter">
+			<h2 class="center subtitle is-1">Quel est l'intérêt des pérovskites pour l'opto-électronique ?</h2>   
+		</div>
+
+		<div class="hero-body has-text-justified is-paddingless" style="margin: 2em 0 2em 0">
+			<div class="container is-size-5 " style="max-width: 1024px; text-indent: 5em;">
+				Devant les défis présentés plus tôt, les technologies actuelles offrent des perspectives très limitées. C'est pourquoi, de nouvelles pistes sont à explorer. C'est là que les pérovskites ont leur carte à jouer. En effet, parmi leur évantail de propriétés, on trouve des caractéristiques opto-électroniques tout à fait adaptées pour constituer des alternatives aux semiconducteurs traditionnels (silicium, III-V...). 
+			</div>
+
+			<div class="container is-size-5 " style="max-width: 1024px;padding-top: 2em;padding-bottom: 2em;">
+				<h3 class="subtitle is-4">Des largeurs de bande interdite "à la carte"</h3>
+			</div>
+
+			<div class="container is-size-5 " style="max-width: 1024px; text-indent: 5em;">
+				Dans la partie précédente, on a vu que pour optimiser le rendement des modules solaires, il est possible de combiner des matériaux dont les largeurs de bande interdite (ou gap) sont complémentaires sur le spectre du visible. Ce que cela montre, c'est aussi que les possbilités de combinaisons ne sont pas infinies et qu'elles dépendent essentiellement des éléments chimiques qui composent les semiconducteurs. A l'opposé, on a remarqué que les gaps des pérovskites dépendaient de la composition chimique du cristal qui est quant à elle bien plus facile à moduler. Par exemple, l'article de l'ACS <a href="#ACSDefinePerovskite">[1]</a> mentionne la possibilité de combiner plusieurs éléments au sein même des espèces A, B et X ce qui donne naissance à des structures comme celle du MAPb<sub>0.75</sub>Sn<sub>0.25</sub>I<sub>3</sub> dont le gap vaut 1.34 eV à comparer avec celui du MAPbI<sub>3</sub> (1.57 eV) <a href="#Joules">[4]</a>. Ceci illustre bien la capacité et la possibilité qu'ont les chercheurs à élaborer des mélanges aboutissant à des largeurs de gap désirées. Il est intéressant de noter également que les pérovskites sont des semiconducteurs à gap direct. Cette propriété, essentielle pour consistuer un candidat à la synthétisation de matériaux photoactifs, permet à la fois de produire des matériaux pour la récupération d'énergie et pour l'émission de lumière là où des semiconducteurs à base de silicium ne pourront jamais émettre de lumière. 
+			</div>
+
+			<div class="container is-size-5 " style="max-width: 1024px;padding-top: 2em;padding-bottom: 2em;">
+				<h3 class="subtitle is-4">Vers une production à bas coût et adaptée à l'industrie</h3>
+			</div>
+
+			<div class="container is-size-5 " style="max-width: 1024px; text-indent: 5em;">
+				Comme dit précédemment, un des freins au développement massif du photovoltaïque domestique est son coût. Ce prix handicapant vient en partie des ressources utilisées dans la fabrication mais aussi dans le processus de fabrication. Les pérovskites, pour leur part, sont solubles dans certains solvants (DMF, DMSO, acétone...) ce qui ouvre la voie vers des procédés d'élaboration de films minces inaccessibles à la technologie silicium. Entre autres, les techniques de spin-coating sont très répandues et aboutissent à des résultats satisfaisants. Par ailleurs, la méthode de dépôt par suspension en solvant peut conduire à des techniques encore plus étonnantes telles que le jet d'encre à pérovskites ou la production "rouleau à rouleau" et donc à des méthodes à bas coûts pour des capacités en volumes importantes. Enfin, ces techniques sont déjà bien maîtrisées dans d'autres secteurs de l'industrie comme le textile ou pour d'autres matériaux (semiconducteurs organiques...) ce qui évite de devoir complètement changer l'appareil de production qui a bien souvent demandé des investissements colossaux.
+			</div>
+
+			<div class="container is-size-5 " style="max-width: 1024px;padding-top: 2em;padding-bottom: 2em;">
+				<h3 class="subtitle is-4">Un bilan carbone encore meilleur</h3>
+			</div>
+
+			<div class="container is-size-5 " style="max-width: 1024px; text-indent: 5em;">
+				Considérer que le photovoltaïque ne pollue pas car fournit de l'énergie par récupération de l'énergie solaire, c'est commettre une erreur monumentale. En effet, l'extraction des matières premières leur traitement, l'assemblage du module, la maintenance et la fin de vie du dispositifs sont autant de moments dans la vie d'un panneau photovoltaïque où il a un impact sur l'environnement. C'est d'ailleurs une des raisons pour lesquelles pour effectivement estimer l'impact écologique d'un produit il est nécessaire de réaliser une analyse du cycle de vie (life cycle assessment) complète et parfois extrêmement complexe. Ainsi négliger l'empreinte qu'a la production de panneaux solaires est une faute. Un article de Joule <a href="#LCA">[5]</a> suggère que si tout continue sur le chemin que l'on est en train d'empreinter sans améliorer les processus, l'empreinte carbone de la production de modules solaires pourrait surpasser l'empreinte du transport maritime ou aérien. Une fois encore, les cellules solaires peuvent se placer en tête de liste pour palier au problème avec des ressources moins critiques à exploiter et plus facilement recyclables grâce à des composés hybrides organiques-inorganiques.
+			</div>
+		</div>
+	</section>  
+
+	<!-- Partie 4 -->
+
+	<section data-aos="fade-right">
+		<div class="hero-body has-background-grey-lighter">
+			<h2 class="center subtitle is-1"> Les cellules multijonction à pérovskite et leurs limites</h2>   
+		</div>
+
+		
+		<div class="hero-body has-text-justified is-paddingless" style="margin: 2em 0 2em 0">
+			<div class="container is-size-5 " style="max-width: 1024px; text-indent: 5em;">
+				Avec tout ce qui a été évoqué, on peut se demander pourquoi les panneaux solaires à pérovskite ne sont pas encore omniprésents, envahissant les toits et les appareils électriques. Le fait est que malgré toutes leurs qualités, les pérovskites ont leur part de défauts et qu'elles restent des matériaux à étudier. 
+
+			</div>
+
+			<div class="container is-size-5 " style="max-width: 1024px;padding-top: 2em;padding-bottom: 2em;">				
+				<h3 class="subtitle is-4">Des cellules instables</h3>
+			</div>
+
+			<div class="container is-size-5 " style="max-width: 1024px; text-indent: 5em;">
+
+				La technologie manque de maturité, notamment pour ce qui concerne la stabilité des cellules. En effet, les cellules pérovskites sont victimes d'un processus de dégradation bien plus rapide que ses équivalents traditionnels ce qui mène à une perte significative de rendement prématurée. Des chercheurs <a href="#dureeDeVie">[6]</a> ont recensé et évalué la durée de vie de plusieurs montages à cellules simples ou tandem mais ont aussi expliqué/comparé différents protocoles de test afin de permettre de comparer objectivement les résultats qui peuvent l'être.
+			</div>
+
+			<div class="container is-size-5 " style="max-width: 1024px;padding-top: 2em;padding-bottom: 2em;">				
+				<h3 class="subtitle is-4">Le défaut de ses qualités</h3>
+			</div>
+
+			<div class="container is-size-5 " style="max-width: 1024px; text-indent: 5em;">
+				Un des enjeux de la course au rendement est de parvenir à superposer des couches de matériaux dont les domaines d'absorption sont complémentaires. Là où les pérovskites facilitent la complémentarité des domaines par des largeurs de bandes relativement modulables, elles souffres de limitations que n'ont pas les seiconducteurs classiques. En effet, leur capacité à se disperser en solution dans des solvants permet de les déposer facilement, mais aussi rend plus compliqué le dépôt d'une couche de pérovskite sur une autre. Les solvants utilisés sont assez peu nombreux et rarement orthogonaux d'où le fait que le dépôt de la seconde couche puisse dissoudre facilement les couches déjà déposées. Pour palier à cela, il est possible d'utiliser les couches de recombinaison (utilisées dans des montages à deux électrodes <a href="#2electrodes">[7]</a>) pour jouer le rôle de film protecteur.
+			</div>
+
+			<div class="container is-size-5 " style="max-width: 1024px;padding-top: 2em;padding-bottom: 2em;">		
+				<h3 class="subtitle is-4">Plomb : le retour ?</h3>
+			</div>
+
+			<div class="container is-size-5 " style="max-width: 1024px; text-indent: 5em;">
+				Si l'un des objectifs derrière le développement des pérovskites pour les dispositifs opto-électroniques est de réduire l'utilisation de matériaux polluants, une quantité significative de candidats sérieux pour les prochaines générations de cellules PV et de LED reposent sur le plomb. Or, il a déjà été banni des peintures et des carburants entre autres. Il s'agit donc d'éviter de le réintroduire à travers la filière photovoltaïque ou des LED. On cherche des alternatives et des pistes ont été proposées mais cela reste encore au stade de l'étude.
+			</div>
+
+		</div>
+	</section>
+
+
+	<section data-aos = "fade-left">
+		<div class="hero-body has-background-grey-lighter">
+			<h2 class="center subtitle is-1"> Références</h2>  
+		</div> 
+		<div class="container is-size-5 " style="max-width: 1024px;">
+			<div class="hero-body has-text-justified is-paddingless" style="margin: 2em 0 2em 0">
+				<div class="columns">
+					<div class="column" id="ACSDefinePerovskite">
+						[1]
+					</div>
+
+					<div class="column is-11 has-text-left">
+						Q. A. Akkerman et L. Manna, « What Defines a Halide Perovskite? », ACS Energy Lett., vol. 5, nᵒ 2, p. 604‑610, févr. 2020, <a href="https://pubs.acs.org/doi/10.1021/acsenergylett.0c00039">doi: 10.1021/acsenergylett.0c00039.</a>
+
+					</div>
+				</div>
+
+				<div class="columns">
+					<div class="column" id="lesechos">
+						[2]
+					</div>
+
+					<div class="column is-11 has-text-left">
+						Caro Bayo, M. Á. 2013. Theory of elasticity and electric polarization effects in the group-III nitrides. PhD Thesis, University College Cork, 2013.
+					</div>
+				</div>
+
+				<div class="columns">
+					<div class="column" id="parametreMaille">
+						[3]
+					</div>
+
+					<div class="column is-11 has-text-left">
+						« Les collectivités et les enjeux de l’éclairage », Les Echos, 19-janv-2018. [En ligne]. Disponible sur: <a href="https://www.lesechos.fr/idees-debats/cercle/les-collectivites-et-les-enjeux-de-leclairage-130191"> https://www.lesechos.fr/idees-debats/cercle/les-collectivites-et-les-enjeux-de-leclairage-130191.</a> [Consulté le: 03-mars-2020].
+					</div>					
+				</div>
+
+				<div class="columns">
+					<div class="column" id="parametreMaille">
+						[4]
+					</div>
+
+					<div class="column is-11 has-text-left">
+						D. P. McMeekin et al., « Solution-Processed All-Perovskite Multi-junction Solar Cells », Joule, vol. 3, nᵒ 2, p. 387‑401, févr. 2019, <a href="https://www.sciencedirect.com/science/article/pii/S2542435119300364"> doi: 10.1016/j.joule.2019.01.007.</a>
+					</div>					
+				</div>
+
+				<div class="columns">
+					<div class="column" id="LCA">
+						[5]
+					</div>
+
+					<div class="column is-11 has-text-left">
+						L. Wagner, S. Mastroianni, et A. Hinsch, « Reverse Manufacturing Enables Perovskite Photovoltaics to Reach the Carbon Footprint Limit of a Glass Substrate », Joule, vol. 0, nᵒ 0, mars 2020, <a href="https://www.cell.com/joule/fulltext/S2542-4351(20)30050-7?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS2542435120300507%3Fshowall%3Dtrue#secsectitle0020">doi: 10.1016/j.joule.2020.02.001.</a>
+					</div>					
+				</div>
+
+				<div class="columns">
+					<div class="column" id="dureeDeVie">
+						[6]
+					</div>
+
+					<div class="column is-11 has-text-left">
+						F. Meillaud, A. Shah, C. Droz, E. Vallat-Sauvain, et C. Miazza, « Efficiency limits for single-junction and tandem solar cells », Solar Energy Materials and Solar Cells, vol. 90, nᵒ 18‑19, p. 2952‑2959, nov. 2006, <a href="https://www.sciencedirect.com/science/article/pii/S0927024806002029">doi: 10.1016/j.solmat.2006.06.002.</a>
+
+					</div>					
+				</div>
+
+				<div class="columns">
+					<div class="column" id="dureeDeVie">
+						[7]
+					</div>
+
+					<div class="column is-11 has-text-left">
+						J. P. Mailoa et al., « A 2-terminal perovskite/silicon multijunction solar cell enabled by a silicon tunnel junction », Appl. Phys. Lett., vol. 106, nᵒ 12, p. 121105, mars 2015, <a href="https://aip.scitation.org/doi/10.1063/1.4914179">doi: 10.1063/1.4914179.</a> 
+
+					</div>					
+				</div>
+
+
+			</div>
+
+		</div>
+
+
+	</section>
+
+
+	<footer style="max-height: 4em;background-color: grey;">
+		<div class="columns center" style="width: 100%;">
+			<div class="column is-2 center">
+				<a href="https://twitter.com/BlzdM">
+					<img src="img/Twitter.png" width="30">
+				</a>
+			</div>
+			<div class="column is-2 center">
+				<a href="https://www.linkedin.com/in/morhanbelyazid">
+					<img src="img/linkedIn.png" width="20">
+				</a>
+			</div>
+			<div class="column is-2 center">
+				<a href="https://www.scoop.it/u/morhan-blzd">
+					<img src="img/Scoopit.png" width="20">
+				</a>
+			</div>
+		</div>
+	</footer>
+
+
+</body>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+	AOS.init();
+</script>
+
+</head>
